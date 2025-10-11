@@ -16,7 +16,50 @@
 header{
     background-color: var(--primary-color);
     color: var(--accent-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #a5a1c4;
+}
+
+header img {
+    border: #142d4c solid 2px;
+}
+
+#adventures{
+margin-top: 10px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+width: 100%;
+
+}
+
+#history{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    margin-top: 10px;
+}
+
+figure{
+    display: grid;
+    grid-template-rows: 100px 20px;
+    grid-gap: 10px;
+}
+
+figure img {
+    width: 120px;
+    height: auto;
+}
+
+
 
 body{
     font-family: var(--body-font);
@@ -87,4 +130,10 @@ h2 {
     display: block;
     height: auto;
     width: 100%;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
