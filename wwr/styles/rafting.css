@@ -13,6 +13,7 @@
     box-sizing: border-box;
 }
 
+
 header{
     background-color: var(--primary-color);
     color: var(--accent-color);
@@ -25,7 +26,52 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #a5a1c4;
+    background-color: #fff;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.form-field{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: start;
+    gap: 20px;
+    padding: 5px;
+}
+
+.purpose-section{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.radios {
+   display: grid;
+   grid-template-columns: auto;
+   justify-items: start;
+   padding: 5px;
+}
+
+#submit{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.purpose-section span{
+   width: 50%;
+}
+
+#address {
+     grid-column: 1/ span 2;
+     display:grid;
+     grid-template-columns: auto;
+     text-align: center;
+     font-weight: bold;
+}
+#profiles {
+ grid-column: 1/ span 2
 }
 
 header img {
@@ -50,7 +96,7 @@ width: 100%;
 
 figure{
     display: grid;
-    grid-template-rows: 100px 20px;
+    grid-template-rows: 50px 20px;
     grid-gap: 10px;
 }
 
